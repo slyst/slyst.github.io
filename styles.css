@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Old+Standard+TT|Lato');
+
+body {
+    margin: 0;
+}
+.welcome-container {
+    background-attachment: fixed;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    min-height: 100%;
+    position: relative;
+}
+.welcome {
+    background: rgb(0, 0, 0, .4);
+    padding: 70px 100px;
+}
+.welcome h1 {
+    align-items: center;
+    border-bottom: 5px solid #fff;
+    box-shadow: 0 4px 0 #000;
+    color: #fff;
+    display: flex;
+    font-family: Noto Serif;
+    font-size: 4em;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    text-align: center;
+    text-shadow:
+        5px 5px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    text-transform: uppercase;
+}
+.welcome h1 .cake {
+    border-radius: 100%;
+    box-shadow:
+        5px 5px 0 #000,
+        -2px -3px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    margin-right: 30px;
+    width: 80px;
+}
+.topnav {
+    border-bottom: 5px solid #fff;
+    box-shadow: 0 5px #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 20px 0 45px 0;
+    width: 100%;
+}
+.topnav .item {
+    background-color: rgba(0, 0, 0, .2);
+    border: 3px solid #fff;
+    box-shadow: 5px 5px 0 #000;
+    color: #fff;
+    font-family: Nunito;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+}
+.topnav  .item.nolink {
+    border: 2px dashed;
+}
+.today-container {
+    align-items: center;
+    background-color: #83c783;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.today-title {
+    color: #000;
+    font-family: Old Standard TT;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.today-background {
+    background-attachment: fixed;
+    background-image: url(./images/today.jpg);
+    background-size: cover;
+    position: relative;
+}
+.today {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 70px 100px;
+}
+.messages-container {
+    align-items: center;
+    background-color: #83c783;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.messages-title {
+    color: #000;
+    font-family: Old Standard TT;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.messages-background {
+    background-attachment: fixed;
+    background-image: url(./images/messages.jpg);
+    background-size: cover;
+    position: relative;
+}
+.messages {
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    padding: 70px;
+}
+.mouterleft, .mouterright {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: top;
+    width: 50%;
+}
+.mitem {
+    background-color: rgba(0, 0, 0, .5);
+    border: 3px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-family: Lato;
+    margin: 0 0 10px 0;
+    padding: 20px;
+}
+.mouterleft .mitem {
+    margin-right: 10px;
+}
+.mitem .avatar {
+    background-size: 64px;
+    border-radius: 100%;
+    float: left;
+    height: 64px;
+    position: relative;
+    top: -5px;
+    width: 64px;
+}
+.mitem .name {
+    display: block;
+    font-family: Old Standard TT;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: .8em;
+    margin-left: 85px;
+}
+.mitem .name .n {
+    color: #bbb;
+    font-size: .8em;
+}
+.mitem .name .aka {
+    display: block;
+    font-family: times new roman;
+    font-size: .7em;
+    font-style: italic;
+    font-weight: normal;
+}
+.mitem .message {
+    border-top: 3px solid;
+    display: block;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding-top: 10px;
+}
