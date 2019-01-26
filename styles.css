@@ -121,6 +121,18 @@ body {
     background-size: cover;
     position: relative;
 }
+.question {
+    background-color: #c16734;
+    font-family: Old Standard TT;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.question:before {
+    content: '';
+}
 .messages {
     background-color: rgba(0, 0, 0, .3);
     padding: 70px;
