@@ -16,8 +16,6 @@ body {
 }
 .welcome h1 {
     align-items: center;
-    border-bottom: 5px solid #fff;
-    box-shadow: 0 4px 0 #000;
     color: #fff;
     display: flex;
     font-family: Noto Serif;
@@ -25,7 +23,7 @@ body {
     justify-content: center;
     letter-spacing: 2px;
     margin: 0 auto;
-    padding: 10px 30px;
+    padding: 10px 30px 30px 30px;
     text-align: center;
     text-shadow:
         5px 5px 0 #000,
@@ -35,31 +33,35 @@ body {
         2px 2px 0 #000;
     text-transform: uppercase;
 }
-.welcome h1 .cake {
-    border-radius: 100%;
-    box-shadow:
-        5px 5px 0 #000,
-        -2px -3px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
-    margin-right: 30px;
-    width: 80px;
+.banner {
+    padding: 20px 0;
+    text-align: center;
+}
+.banner img {
+    filter: drop-shadow(10px 10px 10px #000);
+    margin: 0 auto;
+}
+.banner .credit {
+    border-bottom: 2px solid;
+    color: #fff;
+    float: right;
+    font-family: Old Standard TT;
+    opacity: 0;
+    transition: .1s all linear;
+}
+.banner:hover .credit {
+    opacity: 1;
 }
 .topnav {
-    border-bottom: 5px solid #fff;
-    box-shadow: 0 5px #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;
-    padding: 20px 0 45px 0;
+    padding: 20px 0;
     width: 100%;
 }
 .topnav .item {
-    background-color: rgba(0, 0, 0, .2);
-    border: 3px solid #fff;
-    box-shadow: 5px 5px 0 #000;
+    background-color: rgba(0, 0, 0, .5);
     color: #fff;
     font-family: Nunito;
     font-size: 2em;
@@ -75,7 +77,7 @@ body {
 }
 .today-container {
     align-items: center;
-    background-color: #83c783;
+    background: repeating-linear-gradient(-45deg, #b73e1a, #b73e1a 10px, #c74923 10px, #c74923 20px);
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -100,7 +102,7 @@ body {
 }
 .messages-container {
     align-items: center;
-    background-color: #83c783;
+    background: repeating-linear-gradient(-45deg, #b73e1a, #b73e1a 10px, #c74923 10px, #c74923 20px);
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -121,8 +123,10 @@ body {
 }
 .messages {
     background-color: rgba(0, 0, 0, .3);
-    display: flex;
     padding: 70px;
+}
+.m-container {
+    display: flex;
 }
 .mouterleft, .mouterright {
     display: flex;
@@ -133,12 +137,11 @@ body {
 }
 .mitem {
     background-color: rgba(0, 0, 0, .5);
-    border: 3px solid #fff;
     color: #fff;
     display: inline-block;
     font-family: Lato;
     margin: 0 0 10px 0;
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
 }
 .mouterleft .mitem {
     margin-right: 10px;
@@ -172,10 +175,35 @@ body {
     font-weight: normal;
 }
 .mitem .message {
-    border-top: 3px solid;
     display: block;
     font-size: 20px;
     line-height: 1.5;
     margin-top: 10px;
-    padding: 15px 10px 0 10px;
+    padding: 0 10px;
+}
+.art-container {
+    align-items: center;
+    background: repeating-linear-gradient(-45deg, #b73e1a, #b73e1a 10px, #c74923 10px, #c74923 20px);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.art-title {
+    color: #000;
+    font-family: Old Standard TT;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.art-background {
+    background-attachment: fixed;
+    background-image: url(./images/art.jpg);
+    background-size: cover;
+    position: relative;
+}
+.art {
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    padding: 70px;
 }
