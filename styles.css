@@ -193,14 +193,14 @@ body {
     margin-top: 10px;
     padding: 0 10px;
 }
-.art-container {
+.nostalgia-container {
     align-items: center;
     background: repeating-linear-gradient(-45deg, #b73e1a, #b73e1a 10px, #c74923 10px, #c74923 20px);
     display: flex;
     justify-content: center;
     padding: 40px;
 }
-.art-title {
+.nostalgia-title {
     color: #000;
     font-family: Old Standard TT;
     font-size: 2em;
@@ -208,14 +208,45 @@ body {
     letter-spacing: 10px;
     text-transform: uppercase;
 }
-.art-background {
+.nostalgia-background {
     background-attachment: fixed;
-    background-image: url(./images/art.jpg);
+    background-image: url(./images/nostalgia.jpg);
     background-size: cover;
     position: relative;
 }
-.art {
+.nostalgia {
     background-color: rgba(0, 0, 0, .3);
     display: flex;
     padding: 70px;
+}
+.n-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1080px;
+}
+.n-left, .n-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: top;
+    width: 50%;
+}
+.image {
+    background: #fff;
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px 10px 0 10px;
+    width: 490px;
+}
+.image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.image .caption {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    font-family: monospace;
+    padding: 15px;
 }
