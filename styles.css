@@ -147,6 +147,11 @@ body {
     padding: 70px 140px;
     text-align: justify;
 }
+.today .pixel {
+    float: right;
+    padding-left: 70px;
+    width: 200px;
+}
 .today img {
     width: 23px;
 }
