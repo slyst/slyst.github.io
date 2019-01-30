@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Old+Standard+TT|Lato');
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
 }
@@ -69,11 +72,50 @@ body {
     margin: 20px;
     padding: 20px;
     text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     width: 25%;
 }
 .topnav  .item.nolink {
     border: 2px dashed;
+}
+.topnav .item:not(.nolink):hover {
+    background-color: rgba(255, 255, 255, .3);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: bottom left;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 2px 2px #fff;
+}
+.topnav .item.one:hover {
+    background-image: url(./images/redpandaAdmire.png)
+}
+.topnav .item.two:hover {
+    background-image: url(./images/redpandaHug.png);
+    background-size: 65px;
+}
+.topnav .item.three:hover {
+    background-image: url(./images/redpandaDerp.png);
+    background-size: 60px;
+}
+.topnav .item.four:hover {
+    background-image: url(./images/redpandaPray.png);
+    background-position: bottom right;
+}
+.anchor {
+    position: absolute;
+    right: 55px;
+}
+.anchor a {
+    border: 2px solid;
+    border-radius: 100%;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px 12px;
+    text-decoration: none;
 }
 .today-container {
     align-items: center;
@@ -97,8 +139,16 @@ body {
     position: relative;
 }
 .today {
-    background-color: rgba(0, 0, 0, .3);
-    padding: 70px 100px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-family: Old Standard TT;
+    font-size: 23px;
+    line-height: 1.5;
+    padding: 70px 140px;
+    text-align: justify;
+}
+.today img {
+    width: 23px;
 }
 .messages-container {
     align-items: center;
