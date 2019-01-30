@@ -305,3 +305,30 @@ body {
     font-family: monospace;
     padding: 15px;
 }
+.bye-container {
+    align-items: center;
+    background: repeating-linear-gradient(-45deg, #b73e1a, #b73e1a 10px, #c74923 10px, #c74923 20px);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.bye-title {
+    color: #000;
+    font-family: Old Standard TT;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.bye-background {
+    background-attachment: fixed;
+    background-image: url(./images/bye.jpg);
+    background-size: cover;
+    position: relative;
+}
+.bye {
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    padding: 10px 70px;
+    text-align: center;
+}
